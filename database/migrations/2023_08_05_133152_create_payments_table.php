@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreignId('user_id');
             $table->double('total');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

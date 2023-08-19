@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('link');
             $table->timestamp('expire_date');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
